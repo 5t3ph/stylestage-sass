@@ -1,0 +1,69 @@
+$color-primary: #3a00ff !default;
+$color-primary-alt: #6f6ffd !default;
+$color-secondary: #d42257 !default;
+$color-background: #d2fbf7 !default;
+
+$brand-colors: (
+  primary: $color-primary,
+  primary-alt: $color-primary-alt,
+  secondary: $color-secondary,
+) !default;
+
+$color-body: scale-color(
+  $color-primary,
+  $lightness: -30%,
+  $saturation: -50%
+) !default;
+$color-gray: mix(#767676, $color-body, 70%) !default;
+
+$colors: map-merge(
+  $brand-colors,
+  (
+    background: $color-background,
+    text: $color-body,
+    light: #fff,
+  )
+);
+
+@function color($key) {
+  @return map-get($colors, $key);
+}
+
+@function svgColor($color) {
+  @return "%23" + str-slice("#{color($color)}", 2, -1);
+}
+
+$link-color: color(primary) !default;
+$border-radius: 8px !default;
+
+$font-weight-strong: 500 !default;
+$font-size-h1: 6rem !default;
+$font-size-h2: 3rem !default;
+$font-size-h3: 2rem !default;
+$font-size-h4: 1.35rem !default;
+$font-size-text: 1.15rem !default;
+
+$font-sizes: (
+  h1: $font-size-h1,
+  h2: $font-size-h2,
+  h3: $font-size-h3,
+  h4: $font-size-h4,
+  text: $font-size-text,
+);
+
+// stylelint-disable
+:root {
+  @each $key, $color in $colors {
+    --color-#{$key}: #{$color};
+  }
+
+  --color-anchor: #{$link-color};
+  --font-family: "Baloo 2", sans-serif;
+  --font-weight-strong: #{$font-weight-strong};
+
+  @each $key, $size in $font-sizes {
+    --font-size-#{$key}: #{$size};
+  }
+
+  --border-radius: #{$border-radius};
+}

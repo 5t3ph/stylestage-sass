@@ -1,13 +1,15 @@
 .profile {
-  width: 95vw;
+  width: 90vw;
   max-width: 80ch;
   margin: 1rem auto 10vh;
   padding: 1.25rem;
   z-index: 1;
+  border: 1px dashed;
+  color: #8f5b1b;
+  background: white;
 
   h4 {
     margin: 0;
-    color: var(--color-secondary);
     text-align: center;
   }
 
@@ -17,9 +19,9 @@
     grid-gap: 1rem;
 
     > a {
+      color: #8f5b1b;
       min-height: 2em;
       border: 2px solid currentColor;
-      color: var(--color-secondary);
     }
   }
 

@@ -1,4 +1,37 @@
 #guidelines {
+  // grid-row: 2 / 3;
+  // grid-column: 1 / 2;
+  margin-top: 2rem;
+  padding-bottom: 5vh;
+
+  .container {
+    background: #ffe2b7;
+    justify-content: flex-start;
+    color: #373430;
+
+
+    h2 {
+      background-color: #fffaf2;
+      &::before,
+      &::after {
+        content: "";
+        height: 1px;
+        display: block;
+        background-color: currentColor;
+      }
+    }
+
+    h3 {
+      display: none;
+    }
+
+    p {
+      padding: 0 1rem;
+      font-size: 15px;
+    }
+
+  }
+  
   h3 {
     display: inline-block;
     transform: rotate(-8deg) translateX(-10%);
@@ -15,27 +48,15 @@
     }
   }
 
-  @supports (background-clip: text) or (-webkit-background-clip: text) {
-    p:nth-of-type(2) {
-      position: relative;
-
-      &::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: rotate(4deg) translate(4.75rem, -3.5rem);
-        transform-origin: left center;
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: var(--color-primary-alt);
-        font-size: 0.9em;
-        font-weight: normal;
-        content: "← Whoa, text gradients!";
-      }
-    }
-  }
-
   .container > a {
     align-self: center;
+    margin-bottom: -3rem;
+    box-shadow: 0px 0px 4px 2px black;
+    background-color: #fab34c;
+    color: #523810;
+
+    &:hover {
+      background-color: #fffaf2;
+    }
   }
 }

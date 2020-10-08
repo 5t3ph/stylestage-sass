@@ -1,26 +1,41 @@
 #files {
   display: grid;
   place-content: center;
-  margin: 5vh auto;
   text-align: center;
-
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   h3 {
+    display: none;
     height: 0;
     opacity: 0;
   }
 
   .container {
-    display: inline-block;
-    padding: 5vmin;
-    outline: 4px dashed var(--color-secondary);
-    background-color: var(--color-background);
+    display: flex;
     text-align: center;
+    justify-content: space-evenly;
 
-    a:not(:last-child) {
-      margin: 0.5rem;
+    min-height: unset;
+    background-color: #fab34c;
+    color: #523810;
 
-      &:not(.link-codepen) {
-        font-size: clamp(1.5rem, 4vw, 2rem);
+    a {
+      font-size: 1.125rem;
+      line-height: 1;
+      text-align: center;
+      width: max-content;
+      height: max-content;
+      padding: 0;
+      border-radius: unset;
+      padding: 0 0.5rem;
+      min-height: 3em;
+      color: inherit;
+      text-decoration: none;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        background-color: #fffaf2;
       }
     }
   }

@@ -1,13 +1,33 @@
 // stylelint-disable no-descending-specificity
+html {
+  background-color: white;
+}
+
 body {
-  background-color: var(--color-background);
+  background-color: #fffaf2;
   color: var(--color-text);
   font-family: var(--font-family);
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 main {
   padding-top: 5vh;
   padding-bottom: 5vh;
+  background: #fffaf2;
+  
+  & > div.container {
+    display: grid;
+    row-gap: 3rem;
+    column-gap: 5rem;
+    justify-content: center;
+    // grid-template-rows: repeat(auto-fit,minmax(min-content, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+
+    @media only screen and (max-width: 500px) {
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+  }
 
   &:focus {
     outline: none;
@@ -16,6 +36,15 @@ main {
   h3 {
     color: var(--color-primary);
   }
+
+  a {
+    color: #000000;
+    font-weight: 500;
+
+    :focus {
+      background-color: white;
+    }
+  }
 }
 
 article {
@@ -23,8 +52,8 @@ article {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    // padding-top: 5vh;
+    // padding-bottom: 5vh;
   }
 }
 
@@ -41,7 +70,7 @@ article,
 
 article,
 #styles {
-  padding: 1rem;
+  padding: 0;
 }
 
 .page-footer ul,

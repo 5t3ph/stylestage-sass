@@ -21,7 +21,6 @@ main {
     row-gap: 3rem;
     column-gap: 5rem;
     justify-content: center;
-    // grid-template-rows: repeat(auto-fit,minmax(min-content, 1fr));
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 
     @media only screen and (max-width: 500px) {
@@ -52,8 +51,6 @@ article {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    // padding-top: 5vh;
-    // padding-bottom: 5vh;
   }
 }
 

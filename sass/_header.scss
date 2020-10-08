@@ -1,7 +1,7 @@
 header {
   min-height: 40vh;
   place-items: center;
-  padding: 10vh 2rem;
+  padding: 2rem;
 
   text-align: center;
 
@@ -28,14 +28,11 @@ header {
     color: white;
   }
 
-  p {
-    
-  }
-
   h1 {
     font-size: 24px;
     font-family: "reklame-script", serif;
     font-weight: 400;
+    margin-top: 2.5rem !important;
   }
 
   h2 {

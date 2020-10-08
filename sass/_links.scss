@@ -1,21 +1,40 @@
 .skip-link {
+  padding: 0.5rem 1rem;
+  color: #8f5b1b;
+  background: white;
   position: absolute;
-  top: auto;
-  left: -10000px;
-  width: 1px;
-  height: 1px;
-  background-color: var(--color-secondary);
-  color: #fff;
-  font-size: 1.125rem;
-  overflow: hidden;
+  display: block;
+  width: max-content;
+  left: 50%;
+  transform: translate(-50%, 5%);
+  border-radius: 10px;
 
-  &:focus {
+  @media (min-width: 1800px) {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: auto;
-    height: auto;
-    padding: 0.5em;
+    left: 2vmin;
+    bottom: 2vmin;
+    max-width: 30ch;
+    margin-bottom: 0;
+    border-radius: var(--border-radius);
+    background-color: var(--color-light);
+    box-shadow: 0 2px 5px rgba(58, 0, 255, 0.15);
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75em;
+    transform: translate(0, 0);
+    transition: 180ms all ease-in-out;
+    font-size: 1.125rem;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 2px black;
+    background-color: #373430;
+    color: #ffffff;
   }
 }
 
@@ -76,7 +95,6 @@
   svg {
     width: 1em;
     height: 1em;
-    // margin-right: 0.25em;
     margin: 0 auto;
     fill: currentColor;
     display: block;

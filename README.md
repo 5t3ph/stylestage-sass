@@ -16,8 +16,16 @@ You may alter anything and everything, but keep in mind that the final styleshee
 
 > If you change the output stylesheet name, be sure to update the link to it in `index.html`
 
+### Publish to Github Pages
+This starter uses github actions to auto deploy `public` directory to `gh-pages` branch whenever there is a push to `main` branch.
+1. Go to repo settings, under Github Pages, select `gh-pages` as source.
+2. Go to username.github.io/stylestage-sass to see your publish site.
+
 ## Submitting Your Stylesheet
 
 Once you've created your stylesheet with this starter, publish this as a public repo and then you can use the GitHub link to the "raw" version of the `public/style.css` file for your final submission.
+
+If you choose to publish to github pages, you can use:
+https://username.github.io/stylestage-sass/style.css
 
 You will need to fork [the main Style Stage repo](https://github.com/5t3ph/stylestage) to add your stylesheet, as [explained in the FAQ](https://stylestage.dev/guidelines/#how-do-i-create-a-pull-request-pr).

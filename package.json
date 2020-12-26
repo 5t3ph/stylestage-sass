@@ -1,6 +1,6 @@
 {
   "name": "stylestage-sass",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A minimal starter for Style Stage submissions that includes the source Sass used to create the base Style Stage theme, and the source HTML.",
   "main": "index.html",
   "scripts": {

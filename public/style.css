@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&display=swap");
 :root {
-  --color-primary: #01627F;
+  --color-primary: #28b0da;
   --color-primary-alt: #6f6ffd;
   --color-secondary: #d42257;
   --color-background: #fff;
-  --color-text: #173943;
+  --color-text: #3a6b7a;
   --color-light: #fff;
-  --color-anchor: #01627F;
+  --color-anchor: #28b0da;
   --font-family: "Baloo 2", sans-serif;
   --font-weight-strong: 500;
   --font-size-h1: 6rem;
@@ -135,6 +135,10 @@ blockquote::after {
 #contribute p:nth-of-type(1) {
   font-size: var(--font-size-h4);
   font-weight: var(--font-weight-strong);
+}
+
+header {
+  color: var(--color-primary);
 }
 
 .link-github svg {

@@ -1,0 +1,28 @@
+nav {
+    background-color: var(--color-darker);
+    padding: 1em;
+    position: sticky;
+    top: 0;
+
+
+ ul {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+
+   
+}
+
+a:hover,
+a:focus {
+ opacity: 0.7;   
+}
+
+}

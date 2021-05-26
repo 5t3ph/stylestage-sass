@@ -1,0 +1,30 @@
+#about ul {
+    --gap: 1em;
+    columns: 4em 3;
+    list-style: none;
+    gap: var(--gap);
+    margin: 0;
+    padding: 8px;
+    
+
+}
+
+#about li {
+    border: 1px solid;
+    align-self: start;
+    padding: .25em;
+    border-radius: 8px;
+    //margin: 0.60em;
+    font-size: 0.8rem;
+    overflow-wrap: break-word;
+}
+
+
+#about section:nth-child(2) {
+
+    p:nth-child(3)  {
+        color: #02484e;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+} 

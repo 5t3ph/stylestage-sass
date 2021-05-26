@@ -1,4 +1,5 @@
-$color-primary: rgb(40, 176, 218);   //#3a00ff !default;   //#01627F
+$color-primary: #499da7;   //#3a00ff !default;   //#01627F    //rgb(40, 176, 218);
+//--color-darker: #006973;
 $color-primary-alt: #6f6ffd !default; //#6f6ffd
 $color-secondary: #d42257 !default;
 $color-background: #fff !default;   // #d2fbf7 !default;
@@ -37,11 +38,11 @@ $link-color: color(primary) !default;
 $border-radius: 8px !default;
 
 $font-weight-strong: 500 !default;
-$font-size-h1: 6rem !default;
-$font-size-h2: 3rem !default;
-$font-size-h3: 2rem !default;
+$font-size-h1: 6rem !default; //6rem !default;  //clamp(4rem, 15vw, 7rem)
+$font-size-h2: 2.5rem !default; //3rem
+$font-size-h3: 1rem !default; //2rem
 $font-size-h4: 1.35rem !default;
-$font-size-text: 1.15rem !default;
+$font-size-text: 1.15rem default;  //1.15rem //clamp(1.15rem, 5vw, 1.25rem)
 
 $font-sizes: (
   h1: $font-size-h1,
@@ -55,6 +56,7 @@ $font-sizes: (
 :root {
   @each $key, $color in $colors {
     --color-#{$key}: #{$color};
+    --color-darker: #006973;
   }
 
   --color-anchor: #{$link-color};
@@ -66,4 +68,16 @@ $font-sizes: (
   }
 
   --border-radius: #{$border-radius};
+}
+
+.container {
+
+  max-width: 103ch;
+  margin: 0 auto;
+  padding: 8px;
+
+}
+
+body {
+  margin: 0;
 }

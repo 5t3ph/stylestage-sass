@@ -1,4 +1,41 @@
+
 header {
 
-  color: var(--color-primary);
+  background-color: #499da7;
+  padding: 1px; 
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  
+
+  .container {
+   margin: 0 auto;
+   max-width: 80ch;
+   background-color: #499da7;
+
+  }
+
+  h1 {
+
+  color: var(--color-background);
+  text-transform: uppercase;
+  line-height: 0.6;
+  font-weight: bold;
+  //font-size: clamp(2rem, 7vw, var(--font-size-h1));
+  text-align:center;
+  
 }
+
+h2 {
+  color: #01545c;
+}
+
+
+a {
+  color: #01454b;
+}
+
+}
+
+

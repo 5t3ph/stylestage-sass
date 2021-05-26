@@ -55,8 +55,8 @@ h2 {
 
 #main h2 {
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   color: #000000;
 }
 
@@ -117,8 +117,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .container {
@@ -158,8 +158,8 @@ nav ul {
   margin: 0 auto;
   padding: 0;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   list-style: none;
 }
 
@@ -176,7 +176,7 @@ nav a:focus {
 #about ul {
   --gap: 1em;
   -webkit-columns: 4em 3;
-  columns: 4em 3;
+          columns: 4em 3;
   list-style: none;
   gap: var(--gap);
   margin: 0;
@@ -186,9 +186,9 @@ nav a:focus {
 #about li {
   border: 1px solid;
   -ms-flex-item-align: start;
-  -ms-grid-row-align: start;
-  align-self: start;
-  padding: 0.25em;
+      -ms-grid-row-align: start;
+      align-self: start;
+  padding: .25em;
   border-radius: 8px;
   font-size: 0.8rem;
   overflow-wrap: break-word;
@@ -207,12 +207,11 @@ nav a:focus {
 .skip-link:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
+          clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
   white-space: nowrap;
   width: 1px;
 }
-
 /*# sourceMappingURL=style.css.map */
